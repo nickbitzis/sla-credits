@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>sla-credits</title>
+<style>
+:root {
+  color-scheme: light;
+  --bg: #f7f7f5; --panel: #fcfcfb; --ink: #0b0b0b; --muted: #52514e; --line: #e2e1dc; --grid: #ecebe6;
+  --s1: #2a78d6; --s2: #eb6834; --s3: #1baf7a; --s4: #eda100;
+  --good: #1c7c3c; --bad: #c0392b; --chip: #efeee9;
+  --h0: #d5ead9; --h1: #f3d27a; --h2: #ec9a5b; --h3: #c0392b; --hm: #a9c4e8; --hn: #ecebe6;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #121211; --panel: #1a1a19; --ink: #f0efec; --muted: #c3c2b7; --line: #33322e; --grid: #2a2926;
+    --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500;
+    --good: #5cc48a; --bad: #ec7a6d; --chip: #262523;
+    --h0: #1f4a2e; --h1: #8a6d12; --h2: #a5501f; --h3: #d9483a; --hm: #2c4a73; --hn: #262523;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #121211; --panel: #1a1a19; --ink: #f0efec; --muted: #c3c2b7; --line: #33322e; --grid: #2a2926;
+  --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500;
+  --good: #5cc48a; --bad: #ec7a6d; --chip: #262523;
+  --h0: #1f4a2e; --h1: #8a6d12; --h2: #a5501f; --h3: #d9483a; --hm: #2c4a73; --hn: #262523;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html, body { overflow-x: hidden; }
+body { margin: 0; background: var(--bg); color: var(--ink);
+  font: 14px/1.45 ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; }
+header { padding: 18px 24px 6px; display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: baseline; }
+header h1 { font-size: 20px; margin: 0; }
+header p { margin: 0; color: var(--muted); }
+nav { display: flex; flex-wrap: wrap; gap: 6px; padding: 6px 24px 0; }
+nav a { padding: 6px 12px; border-radius: 6px; color: var(--ink); text-decoration: none; border: 1px solid var(--line); }
+nav a.on { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+main { padding: 12px 24px 40px; display: grid; gap: 14px; max-width: 1200px; }
+main > * { min-width: 0; }
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 16px; min-width: 0; }
+.panel h2 { font-size: 15px; margin: 0 0 10px; }
+.row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+select, input, button { font: inherit; padding: 6px 8px; border-radius: 6px; border: 1px solid var(--line);
+  background: var(--panel); color: var(--ink); max-width: 100%; }
+button { cursor: pointer; }
+button.primary { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+.tile { border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; min-width: 0; }
+.tile .k { color: var(--muted); font-size: 12px; }
+.tile .v { font-size: 20px; font-variant-numeric: tabular-nums; margin-top: 2px; overflow-wrap: anywhere; }
+.tile .s { color: var(--muted); font-size: 12px; }
+.scroll { overflow-x: auto; max-width: 100%; }
+table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { color: var(--muted); font-weight: 500; font-size: 12px; }
+td.num, th.num { text-align: right; white-space: nowrap; }
+.meta { color: var(--muted); font-size: 12px; }
+.chip { display: inline-block; padding: 1px 8px; border-radius: 10px; background: var(--chip); font-size: 12px; white-space: nowrap; }
+.ok { color: var(--good); } .bad { color: var(--bad); }
+.chart svg { display: block; width: 100%; height: auto; }
+svg text { fill: var(--muted); font-size: 11px; }
+.legend { display: flex; gap: 14px; flex-wrap: wrap; color: var(--muted); font-size: 12px; margin-top: 6px; }
+.sw { width: 10px; height: 10px; border-radius: 2px; display: inline-block; margin-right: 5px; vertical-align: -1px; }
+.terms { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 6px 16px; }
+.terms div { min-width: 0; overflow-wrap: anywhere; }
+.terms span { color: var(--muted); font-size: 12px; display: block; }
+.heat { display: grid; grid-template-columns: repeat(53, 1fr); grid-auto-flow: column; grid-template-rows: repeat(7, auto); gap: 2px; }
+.heat i { display: block; aspect-ratio: 1; border-radius: 2px; background: var(--hn); min-width: 0; }
+.heat i.operational { background: var(--h0); } .heat i.degraded { background: var(--h1); }
+.heat i.partial_outage { background: var(--h2); } .heat i.major_outage { background: var(--h3); }
+.heat i.maintenance { background: var(--hm); }
+.hrow { margin-bottom: 14px; }
+.hrow h3 { font-size: 13px; margin: 0 0 6px; font-weight: 600; display: flex; flex-wrap: wrap; gap: 4px 12px; }
+.hrow h3 span { color: var(--muted); font-weight: 400; }
+.evidence { border-top: 1px solid var(--line); margin-top: 10px; padding-top: 10px; }
+.evidence pre { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 12px; margin: 0; }
+@media (max-width: 640px) {
+  header, nav, main { padding-left: 16px; padding-right: 16px; }
+  .panel { padding: 12px; }
+  th, td { padding: 5px 4px; }
+  .hide-sm { display: none; }
+  .heat { gap: 1px; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>sla-credits</h1>
+  <p>SLA and service credits for Corvane, a made-up B2B analytics vendor. Synthetic data, Nov 2025 to Oct 2026. <span id="asof"></span></p>
+</header>
+<nav>
+  <a href="#customer" id="tab-customer">Customer</a><a href="#availability" id="tab-availability">Availability</a><a href="#claims" id="tab-claims">Claims queue</a><a href="#finance" id="tab-finance">Finance</a>
+</nav>
+<main id="customer" hidden>
+  <section class="panel"><div class="row"><label for="cust">Customer</label><select id="cust"></select></div></section>
+  <section class="panel"><h2>Contract terms</h2><div id="terms"></div></section>
+  <section class="panel">
+    <h2>Monthly uptime against the SLA</h2>
+    <div class="chart" id="uchart"></div>
+    <div class="legend"><span><i class="sw" style="background:var(--s1)"></i>uptime, worst covered component</span><span><i class="sw" style="background:var(--bad)"></i>below target</span><span><i class="sw" style="background:var(--s2)"></i>SLA target</span></div>
+  </section>
+  <section class="panel"><h2>Credits by month</h2><div class="scroll" id="ctable"></div></section>
+</main>
+<main id="availability" hidden>
+  <section class="panel">
+    <h2>Component availability by day (public status definition)</h2>
+    <div class="meta" id="hdef"></div>
+    <div id="heat" style="margin-top:10px"></div>
+    <div class="legend"><span><i class="sw" style="background:var(--h0)"></i>operational</span><span><i class="sw" style="background:var(--hm)"></i>maintenance</span><span><i class="sw" style="background:var(--h1)"></i>degraded</span><span><i class="sw" style="background:var(--h2)"></i>partial outage</span><span><i class="sw" style="background:var(--h3)"></i>major outage</span></div>
+  </section>
+  <section class="panel">
+    <div class="row" style="justify-content:space-between"><h2>Same month, different contract definitions</h2>
+      <div class="row"><select id="cmonth" aria-label="Month"></select><select id="ccomp" aria-label="Component"><option>api</option><option>dashboard</option><option>export</option></select></div></div>
+    <div class="scroll" id="compare"></div>
+  </section>
+  <section class="panel"><h2>Incident history</h2><div class="scroll" id="incidents"></div></section>
+</main>
+<main id="claims" hidden>
+  <section class="panel"><div class="tiles" id="qtiles"></div></section>
+  <section class="panel">
+    <div class="row" style="justify-content:space-between"><h2>Claims</h2>
+      <select id="qstatus" aria-label="Status">
+        <option value="open">open (review, finance, disputed)</option><option value="pending_review">pending_review</option>
+        <option value="pending_finance">pending_finance</option><option value="disputed">disputed</option><option value="approved">approved</option>
+        <option value="rejected">rejected</option><option value="rejected_invalid">rejected_invalid</option><option value="">all</option>
+      </select></div>
+    <div class="meta">Credits of $1,500 or more need a second approver from finance. Acting as <b>ui.reviewer</b> (support) and <b>ui.finance</b> (finance).</div>
+    <div class="scroll" id="qtable"></div>
+    <div id="evidence"></div>
+  </section>
+</main>
+<main id="finance" hidden>
+  <section class="panel"><div class="tiles" id="ftiles"></div></section>
+  <section class="panel"><h2>Revenue impact by segment, full year</h2><div class="scroll" id="segtable"></div>
+    <div class="meta">Computed: what the contracts owe. Issued: credit memos so far. Forfeited: owed but never claimed inside the window. Accrued: expected credits not yet issued.</div></section>
+  <section class="panel"><h2>Credits issued by service month</h2><div class="chart" id="fchart"></div></section>
+  <section class="panel">
+    <div class="row" style="justify-content:space-between"><h2>Credit memo export</h2><select id="fmonth" aria-label="Month"></select></div>
+    <div class="row" id="flinks"></div>
+    <div class="scroll" id="memos"></div>
+  </section>
+  <section class="panel"><h2>Accrual estimate</h2><div class="scroll" id="accrual"></div></section>
+</main>
+<script>
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
+const SYM = {USD: "$", EUR: "EUR ", GBP: "GBP "};
+const money = (c, cur = "USD") => (c < 0 ? "-" : "") + SYM[cur] + (Math.abs(c) / 100).toLocaleString("en-US", {minimumFractionDigits: 2, maximumFractionDigits: 2});
+const short = (c) => { const d = c / 100; return "$" + (d >= 1e6 ? (d / 1e6).toFixed(2) + "M" : d >= 1e3 ? (d / 1e3).toFixed(1) + "k" : d.toFixed(0)); };
+const get = async (u) => { const r = await fetch(u); if (!r.ok) throw new Error(u + " " + r.status); return r.json(); };
+const post = async (u, body) => { const r = await fetch(u, {method: "POST", headers: {"content-type": "application/json"}, body: JSON.stringify(body)}); const j = await r.json(); if (!r.ok) throw new Error(j.message || r.status); return j; };
+const table = (cols, rows) => `<table><thead><tr>${cols.map(c => `<th class="${c.n ? "num" : ""} ${c.sm ? "hide-sm" : ""}">${c.h}</th>`).join("")}</tr></thead><tbody>${rows.map(r => `<tr>${cols.map(c => `<td class="${c.n ? "num" : ""} ${c.sm ? "hide-sm" : ""}">${c.f(r)}</td>`).join("")}</tr>`).join("")}</tbody></table>`;
+const tile = (k, v, s = "") => `<div class="tile"><div class="k">${k}</div><div class="v">${v}</div><div class="s">${s}</div></div>`;
+let META = null;
+const loaded = {};
+
+async function customerView() {
+  if (!loaded.customers) {
+    const cs = (await get("/v1/customers")).customers;
+    $("cust").innerHTML = cs.map(c => `<option value="${c.id}">${c.id} ${esc(c.name)} (${c.segment}, ${c.target}%)</option>`).join("");
+    const want = new URLSearchParams(location.search).get("customer");
+    if (want) $("cust").value = want;
+    $("cust").onchange = renderCustomer;
+    loaded.customers = true;
+  }
+  await renderCustomer();
+}
+
+async function renderCustomer() {
+  const cid = $("cust").value;
+  const [c, up, cr] = await Promise.all([get(`/v1/customers/${cid}`), get(`/v1/customers/${cid}/uptime`), get(`/v1/customers/${cid}/credits`)]);
+  $("terms").innerHTML = c.contract_versions.map(v => `<div class="terms" style="margin-bottom:10px">
+    <div><span>Version</span>v${v.version} from ${v.effective}</div>
+    <div><span>Monthly fee</span>${money(v.monthly_fee, v.currency)}</div>
+    <div><span>Target</span>${v.target}% monthly</div>
+    <div><span>Down means</span>${esc(v.definition)}</div>
+    <div><span>Covered components</span>${v.components.join(", ")}</div>
+    <div><span>Credit tiers</span>${v.tiers.map(t => `below ${t.below}%: ${t.pct}%`).join(", ")}; cap ${v.cap_pct}%</div>
+    <div><span>Credits</span>${v.proactive ? "proactive (no claim needed)" : `claim within ${v.claim_window_days} days`}</div>
+    <div><span>Maintenance notice required</span>${v.maintenance_notice_days} days</div></div>`).join("");
+  drawUptime(up.months);
+  $("ctable").innerHTML = table([
+    {h: "Month", f: r => r.month},
+    {h: "Uptime", n: 1, f: r => r.uptime_pct == null ? "-" : r.uptime_pct.toFixed(3) + "%"},
+    {h: "Fee", n: 1, sm: 1, f: r => money(r.fee, cr.currency)},
+    {h: "Credit owed", n: 1, f: r => r.credit_computed ? money(r.credit_computed, cr.currency) : "-"},
+    {h: "Issued", n: 1, f: r => r.credit_issued ? money(r.credit_issued, cr.currency) : "-"},
+    {h: "State", f: r => `<span class="chip">${esc(r.state)}</span>`},
+  ], cr.months) + `<div class="meta" style="margin-top:6px">Year: owed ${money(cr.total_computed, cr.currency)}, issued ${money(cr.total_issued, cr.currency)}.</div>`;
+}
+
+function drawUptime(months) {
+  const W = 760, H = 240, L = 54, R = 10, T = 12, B = 28;
+  const vals = months.filter(m => m.uptime_pct != null).map(m => m.uptime_pct);
+  const target = months.find(m => m.target)?.target ?? 99.9;
+  const lo = Math.min(target - 0.05, ...vals), span = 100 - lo;
+  const ymin = Math.max(0, 100 - Math.ceil(span / 0.05) * 0.05 - 0.05);
+  const y = v => T + (100 - v) / (100 - ymin) * (H - T - B);
+  const x = i => L + (i + 0.5) * (W - L - R) / months.length;
+  let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Monthly uptime chart">`;
+  for (let k = 0; k <= 4; k++) { const v = 100 - k * (100 - ymin) / 4; s += `<line x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}" stroke="var(--grid)"/><text x="${L - 6}" y="${y(v) + 4}" text-anchor="end">${v.toFixed(2)}%</text>`; }
+  const tl = months.map((m, i) => m.target ? `${x(i)},${y(m.target)}` : null).filter(Boolean);
+  s += `<polyline points="${tl.join(" ")}" fill="none" stroke="var(--s2)" stroke-width="2" stroke-dasharray="6 4"/>`;
+  const pts = months.map((m, i) => m.uptime_pct != null ? `${x(i)},${y(m.uptime_pct)}` : null).filter(Boolean);
+  s += `<polyline points="${pts.join(" ")}" fill="none" stroke="var(--s1)" stroke-width="2"/>`;
+  months.forEach((m, i) => {
+    s += `<text x="${x(i)}" y="${H - 8}" text-anchor="middle">${m.month.slice(2)}</text>`;
+    if (m.uptime_pct != null) { const bad = m.target && m.uptime_pct < m.target; s += `<circle cx="${x(i)}" cy="${y(m.uptime_pct)}" r="4" fill="${bad ? "var(--bad)" : "var(--s1)"}"><title>${m.month}: ${m.uptime_pct.toFixed(4)}%, ${m.downtime_minutes} min counted</title></circle>`; }
+  });
+  $("uchart").innerHTML = s + "</svg>";
+}
+
+async function availabilityView() {
+  if (!loaded.heat) {
+    const [hm, st] = await Promise.all([get("/v1/status/heatmap"), get("/v1/status")]);
+    $("hdef").textContent = st.definition + ". Each square is one day, weeks run left to right.";
+    const first = new Date(hm.components.api[0].date + "T00:00:00Z").getUTCDay();
+    $("heat").innerHTML = Object.entries(hm.components).map(([c, days]) => {
+      const sm = st.components[c];
+      const pad = Array.from({length: (first + 6) % 7}, () => `<i style="visibility:hidden"></i>`).join("");
+      return `<div class="hrow"><h3>${c}<span>${sm.uptime_pct_year.toFixed(3)}% for the year, ${sm.down_minutes} down minutes, ${sm.days.major_outage} major and ${sm.days.partial_outage} partial outage days</span></h3>
+        <div class="heat">${pad}${days.map(d => `<i class="${d.status}" title="${d.date}: ${d.status.replace("_", " ")}, ${d.down_minutes} down min${d.incidents.length ? ", " + d.incidents.join(" ") : ""}"></i>`).join("")}</div></div>`;
+    }).join("");
+    $("incidents").innerHTML = table([
+      {h: "Start", f: r => r.start.replace("T", " ")}, {h: "Min", n: 1, f: r => r.minutes},
+      {h: "Components", f: r => r.components.join(", ")}, {h: "Cause", f: r => `<span class="chip">${r.root_cause}</span>`},
+      {h: "Summary", sm: 1, f: r => `<b>${esc(r.public_title)}</b><div class="meta">${esc(r.summary)}</div>`},
+    ], st.incidents.filter(i => i.severity !== "minor" || i.minutes >= 10).reverse());
+    $("cmonth").innerHTML = META.months.map(m => `<option>${m}</option>`).join("");
+    $("cmonth").value = "2026-04"; $("ccomp").value = "dashboard";
+    $("cmonth").onchange = $("ccomp").onchange = renderCompare;
+    loaded.heat = true;
+  }
+  await renderCompare();
+}
+
+async function renderCompare() {
+  const d = await get(`/v1/compare?month=${$("cmonth").value}&component=${$("ccomp").value}`);
+  $("compare").innerHTML = table([
+    {h: "Down means", f: r => esc(r.definition)}, {h: "Notice", n: 1, f: r => r.maintenance_notice_days + "d"},
+    {h: "Down min", n: 1, f: r => r.downtime_minutes}, {h: "Excluded", n: 1, sm: 1, f: r => r.excluded_minutes},
+    {h: "Uptime", n: 1, f: r => r.uptime_pct.toFixed(4) + "%"},
+  ], d.definitions);
+}
+
+async function claimsView() {
+  if (!loaded.claims) { $("qstatus").onchange = renderClaims; loaded.claims = true; }
+  await renderClaims();
+}
+
+async function renderClaims() {
+  const st = $("qstatus").value;
+  const data = st === "open"
+    ? await Promise.all(["pending_review", "pending_finance", "disputed"].map(s => get(`/v1/claims?status=${s}`))).then(a => ({claims: a.flatMap(x => x.claims), counts: a[0].counts}))
+    : await get(`/v1/claims?status=${st}&limit=300`);
+  const n = data.counts;
+  $("qtiles").innerHTML = tile("Pending review", n.pending_review || 0) + tile("Pending finance", n.pending_finance || 0) +
+    tile("Disputed", n.disputed || 0) + tile("Approved", n.approved || 0) + tile("Rejected", (n.rejected || 0) + (n.rejected_invalid || 0), `${n.rejected_invalid || 0} failed validation`);
+  $("qtable").innerHTML = table([
+    {h: "Claim", f: r => r.id}, {h: "Customer", f: r => r.customer_id}, {h: "Month", f: r => r.month},
+    {h: "Claimed / measured", n: 1, f: r => `${r.claimed_minutes} / ${r.measured_minutes ?? "-"} min`},
+    {h: "Credit", n: 1, f: r => r.credit ? money(r.credit, r.currency) : "-"},
+    {h: "Status", f: r => `<span class="chip">${r.status}</span>${r.reason ? `<div class="meta">${esc(r.reason)}</div>` : ""}`},
+    {h: "", f: r => actions(r)},
+  ], data.claims.slice(0, 300)) + (data.claims.length ? "" : `<p class="meta">No claims in this state.</p>`);
+}
+
+function actions(r) {
+  if (r.status === "pending_review") return `<button onclick="act('${r.id}','approve','support')">Approve</button> <button onclick="act('${r.id}','reject')">Reject</button>`;
+  if (r.status === "pending_finance") return `<button class="primary" onclick="act('${r.id}','approve','finance')">Finance approve</button>`;
+  if (r.status === "disputed") return `<button onclick="evidence('${r.id}')">Evidence</button>`;
+  return "";
+}
+
+async function act(id, what, role) {
+  try {
+    if (what === "approve") await post(`/v1/claims/${id}/approve`, {approver: role === "finance" ? "ui.finance" : "ui.reviewer", role});
+    else await post(`/v1/claims/${id}/reject`, {approver: "ui.reviewer", reason: "Rejected in review"});
+  } catch (e) { alert(e.message); }
+  renderClaims();
+}
+
+async function evidence(claimId) {
+  const d = (await get(`/v1/disputes?status=open`)).disputes.find(x => x.claim_id === claimId);
+  const ev = await get(`/v1/disputes/${d.id}/evidence`);
+  const counted = ev.probe_timeline.filter(t => t.meets_quorum && !t.excluded_by);
+  $("evidence").innerHTML = `<div class="evidence"><h2>Evidence pack ${d.id} for ${ev.claim.id}</h2>
+    <div class="tiles">${tile("Customer claims", ev.dispute.claimed_minutes + " min")}${tile("Measured", ev.dispute.measured_minutes + " min")}${tile("Difference", ev.difference_minutes + " min")}${tile("Credit at measured", money(ev.measured.credit, ev.claim.currency))}</div>
+    <p class="meta">${esc(ev.contract_terms.map(t => `v${t.version}: ${t.definition}, target ${t.target}%`).join("; "))}. ${ev.probe_timeline.length} probe failure runs in the month, ${counted.length} counted against the SLA. Data fingerprint ${ev.data_fingerprint}.</p>
+    <div class="scroll">${table([{h: "Start", f: t => t.start.replace("T", " ")}, {h: "Min", n: 1, f: t => t.minutes}, {h: "Component", f: t => t.component}, {h: "Regions failing", f: t => t.regions_failing.join(", ")}, {h: "Counted", f: t => t.excluded_by ? `excluded (${t.excluded_by})` : t.meets_quorum ? '<b class="bad">down</b>' : "below quorum"}], ev.probe_timeline.filter(t => t.minutes >= 2 || t.meets_quorum).slice(0, 40))}</div>
+    <p class="meta">Exclusions: ${ev.exclusions.length ? esc(ev.exclusions.map(e => `${e.ref} ${e.applied ? "applied" : "not applied"}: ${e.reason}`).join("; ")) : "none"}.</p>
+    <div class="row"><select id="rdec" aria-label="Decision"><option value="upheld">uphold measured figure</option><option value="goodwill">measured + 5% goodwill</option><option value="accepted">accept customer figure</option></select>
+    <button class="primary" onclick="resolveDispute('${d.id}')">Record resolution</button></div></div>`;
+  $("evidence").scrollIntoView({behavior: "smooth"});
+}
+
+async function resolveDispute(id) {
+  const decision = $("rdec").value;
+  try { await post(`/v1/disputes/${id}/resolve`, {decision, resolver: "ui.reviewer", notes: "Resolved from the claims queue", goodwill_pct: decision === "goodwill" ? 5 : 0}); }
+  catch (e) { alert(e.message); }
+  $("evidence").innerHTML = "";
+  renderClaims();
+}
+
+async function financeView() {
+  if (!loaded.finance) {
+    $("fmonth").innerHTML = META.months.map(m => `<option>${m}</option>`).join("");
+    $("fmonth").value = "2026-03";
+    $("fmonth").onchange = renderMemos;
+    loaded.finance = true;
+  }
+  const [ri, acc] = await Promise.all([get("/v1/finance/revenue-impact"), get("/v1/finance/accrual")]);
+  const t = ri.total;
+  $("ftiles").innerHTML = tile("Contract fees, year", short(t.fee_usd_cents), "USD at monthly rates") + tile("Credits owed", short(t.computed_usd_cents), `${t.customer_months_breached} customer months below target`) +
+    tile("Credits issued", short(t.issued_usd_cents), `${t.issued_pct_of_fees.toFixed(2)}% of fees`) + tile("Forfeited", short(t.forfeited_usd_cents), "owed, never claimed") + tile("Accrual", short(acc.total_usd_cents), "as of " + acc.as_of);
+  $("segtable").innerHTML = table([
+    {h: "Segment", f: r => r.segment}, {h: "Customers", n: 1, sm: 1, f: r => r.customers}, {h: "Fees", n: 1, f: r => short(r.fee_usd_cents)},
+    {h: "Owed", n: 1, sm: 1, f: r => short(r.computed_usd_cents)}, {h: "Issued", n: 1, f: r => short(r.issued_usd_cents)},
+    {h: "Forfeited", n: 1, sm: 1, f: r => short(r.forfeited_usd_cents)}, {h: "Accrued", n: 1, sm: 1, f: r => short(r.accrued_usd_cents)}, {h: "Issued %", n: 1, f: r => r.issued_pct_of_fees.toFixed(2) + "%"},
+  ], ri.segments);
+  drawBars(ri.months);
+  const kinds = Object.entries(acc.by_kind);
+  $("accrual").innerHTML = table([{h: "Kind", f: r => r[0]}, {h: "Expected", n: 1, f: r => money(r[1])}], kinds) +
+    `<p class="meta">Unclaimed credits use the segment claim rate: ${Object.entries(acc.claim_rate).filter(e => e[0] !== "enterprise").map(e => `${e[0]} ${Math.round(e[1] * 100)}%`).join(", ")}. ${acc.rows.length} customer months.</p>`;
+  await renderMemos();
+}
+
+function drawBars(months) {
+  const W = 760, H = 200, L = 54, R = 10, T = 10, B = 26;
+  const max = Math.max(...months.map(m => m.issued_usd_cents), 1);
+  const bw = (W - L - R) / months.length;
+  let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Credits issued by month">`;
+  for (let k = 0; k <= 3; k++) { const v = max * k / 3, yy = H - B - (H - T - B) * k / 3; s += `<line x1="${L}" x2="${W - R}" y1="${yy}" y2="${yy}" stroke="var(--grid)"/><text x="${L - 6}" y="${yy + 4}" text-anchor="end">${short(v)}</text>`; }
+  months.forEach((m, i) => { const h = (H - T - B) * m.issued_usd_cents / max; s += `<rect x="${L + i * bw + 4}" y="${H - B - h}" width="${bw - 8}" height="${h}" fill="var(--s1)" rx="2"><title>${m.month}: ${money(m.issued_usd_cents)} in ${m.memos} memos</title></rect><text x="${L + (i + 0.5) * bw}" y="${H - 8}" text-anchor="middle">${m.month.slice(2)}</text>`; });
+  $("fchart").innerHTML = s + "</svg>";
+}
+
+async function renderMemos() {
+  const m = $("fmonth").value;
+  const d = await get(`/v1/finance/memos?month=${m}&actor=ui`);
+  $("flinks").innerHTML = `<a href="/v1/finance/memos?month=${m}&format=csv&actor=ui">Download CSV</a><a href="/v1/finance/memos?month=${m}&format=json&actor=ui">JSON</a>
+    <span class="meta">${d.totals.count} memos, ${money(d.totals.usd_cents)} USD equivalent; ${Object.entries(d.totals.by_currency).map(([c, v]) => money(v, c)).join(", ")}</span>`;
+  $("memos").innerHTML = table([
+    {h: "Memo", sm: 1, f: r => r.memo_id}, {h: "Customer", f: r => `${r.customer_id}<div class="meta">${esc(r.customer_name)}</div>`},
+    {h: "Basis", f: r => r.basis}, {h: "Uptime", n: 1, sm: 1, f: r => r.uptime_pct.toFixed(3) + "%"}, {h: "Tier", n: 1, sm: 1, f: r => r.tier_pct + "%"},
+    {h: "Amount", n: 1, f: r => money(r.amount, r.currency)}, {h: "Issued", sm: 1, f: r => r.issued_on},
+  ], d.memos.slice(0, 50)) + (d.memos.length > 50 ? `<p class="meta">First 50 of ${d.memos.length}. The export has all of them.</p>` : "");
+}
+
+const VIEWS = {customer: customerView, availability: availabilityView, claims: claimsView, finance: financeView};
+async function route() {
+  const v = (location.hash || "#customer").slice(1);
+  const name = VIEWS[v] ? v : "customer";
+  for (const k of Object.keys(VIEWS)) { $(k).hidden = k !== name; $("tab-" + k).classList.toggle("on", k === name); }
+  try { await VIEWS[name](); } catch (e) { console.error(e); }
+}
+(async () => {
+  META = await get("/v1/meta");
+  $("asof").textContent = "As of " + META.as_of + ".";
+  window.addEventListener("hashchange", route);
+  route();
+})();
+</script>
+</body>
+</html>

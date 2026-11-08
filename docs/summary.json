@@ -1,0 +1,207 @@
+{
+ "as_of": "2026-11-08",
+ "seed": 20261,
+ "data_fingerprint": "610d2c41941a3d0b",
+ "months": [
+  "2025-11",
+  "2025-12",
+  "2026-01",
+  "2026-02",
+  "2026-03",
+  "2026-04",
+  "2026-05",
+  "2026-06",
+  "2026-07",
+  "2026-08",
+  "2026-09",
+  "2026-10"
+ ],
+ "revenue_impact": {
+  "as_of": "2026-11-08",
+  "segments": [
+   {
+    "segment": "smb",
+    "customers": 150,
+    "fee_usd_cents": 287043170,
+    "issued_usd_cents": 1377737,
+    "accrued_usd_cents": 10000,
+    "computed_usd_cents": 5039187,
+    "forfeited_usd_cents": 3729979,
+    "customer_months_breached": 291,
+    "issued_pct_of_fees": 0.48
+   },
+   {
+    "segment": "mid_market",
+    "customers": 105,
+    "fee_usd_cents": 1444143331,
+    "issued_usd_cents": 22679521,
+    "accrued_usd_cents": 1918647,
+    "computed_usd_cents": 52949795,
+    "forfeited_usd_cents": 28712338,
+    "customer_months_breached": 441,
+    "issued_pct_of_fees": 1.57
+   },
+   {
+    "segment": "enterprise",
+    "customers": 45,
+    "fee_usd_cents": 4831423114,
+    "issued_usd_cents": 361815762,
+    "accrued_usd_cents": 0,
+    "computed_usd_cents": 361815762,
+    "forfeited_usd_cents": 0,
+    "customer_months_breached": 362,
+    "issued_pct_of_fees": 7.489
+   }
+  ],
+  "total": {
+   "fee_usd_cents": 6562609615,
+   "issued_usd_cents": 385873020,
+   "accrued_usd_cents": 1928647,
+   "computed_usd_cents": 419804744,
+   "forfeited_usd_cents": 32442317,
+   "customer_months_breached": 1094,
+   "issued_pct_of_fees": 5.88
+  },
+  "months": [
+   {
+    "month": "2025-11",
+    "fee_usd_cents": 480492931,
+    "issued_usd_cents": 12243169,
+    "memos": 18
+   },
+   {
+    "month": "2025-12",
+    "fee_usd_cents": 483243923,
+    "issued_usd_cents": 18167487,
+    "memos": 30
+   },
+   {
+    "month": "2026-01",
+    "fee_usd_cents": 509329700,
+    "issued_usd_cents": 42090669,
+    "memos": 79
+   },
+   {
+    "month": "2026-02",
+    "fee_usd_cents": 520817708,
+    "issued_usd_cents": 5958321,
+    "memos": 6
+   },
+   {
+    "month": "2026-03",
+    "fee_usd_cents": 538801121,
+    "issued_usd_cents": 54359071,
+    "memos": 118
+   },
+   {
+    "month": "2026-04",
+    "fee_usd_cents": 552382716,
+    "issued_usd_cents": 53860990,
+    "memos": 64
+   },
+   {
+    "month": "2026-05",
+    "fee_usd_cents": 567519638,
+    "issued_usd_cents": 58140135,
+    "memos": 121
+   },
+   {
+    "month": "2026-06",
+    "fee_usd_cents": 570287830,
+    "issued_usd_cents": 16760635,
+    "memos": 24
+   },
+   {
+    "month": "2026-07",
+    "fee_usd_cents": 576015936,
+    "issued_usd_cents": 44744437,
+    "memos": 68
+   },
+   {
+    "month": "2026-08",
+    "fee_usd_cents": 588095254,
+    "issued_usd_cents": 17966725,
+    "memos": 30
+   },
+   {
+    "month": "2026-09",
+    "fee_usd_cents": 587918382,
+    "issued_usd_cents": 44996951,
+    "memos": 60
+   },
+   {
+    "month": "2026-10",
+    "fee_usd_cents": 587704476,
+    "issued_usd_cents": 16584430,
+    "memos": 20
+   }
+  ],
+  "accrual_total_usd_cents": 1928647
+ },
+ "accrual": {
+  "as_of": "2026-11-08",
+  "claim_rate": {
+   "smb": 0.3,
+   "mid_market": 0.5,
+   "enterprise": 1.0
+  },
+  "by_kind": {
+   "claim_open": 993751,
+   "unclaimed_window_open": 934896
+  },
+  "by_segment": {
+   "mid_market": 1918647,
+   "smb": 10000
+  },
+  "total_usd_cents": 1928647
+ },
+ "claims_by_status": {
+  "disputed": 5,
+  "pending_finance": 4,
+  "rejected_invalid": 55,
+  "approved": 276,
+  "pending_review": 1,
+  "rejected": 45
+ },
+ "disputes": {
+  "open": 5,
+  "accepted": 3,
+  "goodwill": 26,
+  "upheld": 50
+ },
+ "status": {
+  "api": {
+   "uptime_pct_year": 99.9185,
+   "down_minutes": 428,
+   "days": {
+    "operational": 341,
+    "maintenance": 1,
+    "degraded": 14,
+    "partial_outage": 8,
+    "major_outage": 1
+   }
+  },
+  "dashboard": {
+   "uptime_pct_year": 99.9431,
+   "down_minutes": 299,
+   "days": {
+    "operational": 346,
+    "maintenance": 3,
+    "degraded": 11,
+    "partial_outage": 4,
+    "major_outage": 1
+   }
+  },
+  "export": {
+   "uptime_pct_year": 99.9322,
+   "down_minutes": 356,
+   "days": {
+    "operational": 344,
+    "maintenance": 3,
+    "degraded": 13,
+    "partial_outage": 4,
+    "major_outage": 1
+   }
+  }
+ }
+}

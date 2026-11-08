@@ -1,0 +1,1808 @@
+{
+ "customers": {
+  "c001": {
+   "contract": "e29b79455815a53a",
+   "credit": 38000,
+   "currency": "EUR",
+   "uptime_pct": 99.5182
+  },
+  "c002": {
+   "contract": "ebd91e7a127f5586",
+   "credit": 641500,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c003": {
+   "contract": "7b68dc9bcac3f3f5",
+   "credit": 1270500,
+   "currency": "EUR",
+   "uptime_pct": 99.5047
+  },
+  "c004": {
+   "contract": "0bf37240680f5cea",
+   "credit": 5000,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c005": {
+   "contract": "d8a96c0906336199",
+   "credit": 10000,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c006": {
+   "contract": "27a8a9d24140516e",
+   "credit": 20500,
+   "currency": "USD",
+   "uptime_pct": 99.4733
+  },
+  "c007": {
+   "contract": "6c92283e10abc89d",
+   "credit": 134500,
+   "currency": "GBP",
+   "uptime_pct": 99.5047
+  },
+  "c008": {
+   "contract": "3227930faddb7f90",
+   "credit": 33500,
+   "currency": "EUR",
+   "uptime_pct": 99.5047
+  },
+  "c009": {
+   "contract": "d9b83c52a3779dc9",
+   "credit": 5000,
+   "currency": "EUR",
+   "uptime_pct": 99.5047
+  },
+  "c010": {
+   "contract": "ccb45c6351c37c0b",
+   "credit": 7000,
+   "currency": "USD",
+   "uptime_pct": 99.5294
+  },
+  "c011": {
+   "contract": "6acd49121d95a1b9",
+   "credit": 113500,
+   "currency": "EUR",
+   "uptime_pct": 99.5182
+  },
+  "c012": {
+   "contract": "bededd3c9de0353f",
+   "credit": 81000,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c013": {
+   "contract": "c516fb31235fb3ca",
+   "credit": 17500,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c014": {
+   "contract": "a2525b400909cf47",
+   "credit": 46500,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c015": {
+   "contract": "89a6fa260b3b8f0a",
+   "credit": 0,
+   "currency": "USD",
+   "uptime_pct": null
+  },
+  "c016": {
+   "contract": "235d3c6dbfcfe215",
+   "credit": 998500,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c017": {
+   "contract": "0c6c802352453428",
+   "credit": 975000,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c018": {
+   "contract": "005de1655ea81ed4",
+   "credit": 813750,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c019": {
+   "contract": "9f1fbbfa8614a0b2",
+   "credit": 94387,
+   "currency": "EUR",
+   "uptime_pct": 99.302
+  },
+  "c020": {
+   "contract": "6dbb92578d23504e",
+   "credit": 13000,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c021": {
+   "contract": "88450183e7ce94c1",
+   "credit": 15000,
+   "currency": "EUR",
+   "uptime_pct": 99.4733
+  },
+  "c022": {
+   "contract": "afa3f185b9173f7f",
+   "credit": 141500,
+   "currency": "GBP",
+   "uptime_pct": 99.4733
+  },
+  "c023": {
+   "contract": "c055d18779e0378b",
+   "credit": 742000,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c024": {
+   "contract": "27825d7b04d436d8",
+   "credit": 182000,
+   "currency": "EUR",
+   "uptime_pct": 99.5182
+  },
+  "c025": {
+   "contract": "f8a359182541555c",
+   "credit": 1264000,
+   "currency": "EUR",
+   "uptime_pct": 99.5047
+  },
+  "c026": {
+   "contract": "474a6c0c93d307d8",
+   "credit": 54500,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c027": {
+   "contract": "b2cc9dcc7a40a781",
+   "credit": 112000,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c028": {
+   "contract": "55d0a6e000d7a1d4",
+   "credit": 14000,
+   "currency": "EUR",
+   "uptime_pct": 99.5047
+  },
+  "c029": {
+   "contract": "7099a9dcb3750489",
+   "credit": 10500,
+   "currency": "EUR",
+   "uptime_pct": 99.5047
+  },
+  "c030": {
+   "contract": "37baa9426e82d330",
+   "credit": 104500,
+   "currency": "GBP",
+   "uptime_pct": 99.4733
+  },
+  "c031": {
+   "contract": "f871cdf456c0069c",
+   "credit": 39000,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c032": {
+   "contract": "cb9fae82af8fe7c8",
+   "credit": 118000,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c033": {
+   "contract": "ed8ca6021899943f",
+   "credit": 7500,
+   "currency": "GBP",
+   "uptime_pct": 99.5182
+  },
+  "c034": {
+   "contract": "eeda312eda6a2ec8",
+   "credit": 27000,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c035": {
+   "contract": "d3598d430d59892d",
+   "credit": 29500,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c036": {
+   "contract": "11b833406b0b69fc",
+   "credit": 95000,
+   "currency": "USD",
+   "uptime_pct": 99.4733
+  },
+  "c037": {
+   "contract": "3d1117af5626c39a",
+   "credit": 10000,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c038": {
+   "contract": "81770c78e247f23a",
+   "credit": 16000,
+   "currency": "GBP",
+   "uptime_pct": 99.4733
+  },
+  "c039": {
+   "contract": "6ff5f3ed623bb6f7",
+   "credit": 603000,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c040": {
+   "contract": "21e96027d0be98ec",
+   "credit": 52500,
+   "currency": "EUR",
+   "uptime_pct": 99.5047
+  },
+  "c041": {
+   "contract": "0071acc329944384",
+   "credit": 21000,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c042": {
+   "contract": "1b67f87fb54cd7be",
+   "credit": 97500,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c043": {
+   "contract": "410a7b6bf5391ade",
+   "credit": 6000,
+   "currency": "GBP",
+   "uptime_pct": 99.5182
+  },
+  "c044": {
+   "contract": "605b3ea2416601b9",
+   "credit": 98000,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c045": {
+   "contract": "aa57bbe01c088371",
+   "credit": 148500,
+   "currency": "USD",
+   "uptime_pct": 99.4733
+  },
+  "c046": {
+   "contract": "9aaa51ae560c0043",
+   "credit": 17500,
+   "currency": "GBP",
+   "uptime_pct": 99.5249
+  },
+  "c047": {
+   "contract": "eecbe6fdf3cb1b57",
+   "credit": 14500,
+   "currency": "EUR",
+   "uptime_pct": 99.5249
+  },
+  "c048": {
+   "contract": "810b0a27b8f883fd",
+   "credit": 162500,
+   "currency": "USD",
+   "uptime_pct": 99.4733
+  },
+  "c049": {
+   "contract": "2959e9e925cb3208",
+   "credit": 17000,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c050": {
+   "contract": "a04176ee83cf588d",
+   "credit": 18500,
+   "currency": "EUR",
+   "uptime_pct": 99.5182
+  },
+  "c051": {
+   "contract": "17a483967126aa65",
+   "credit": 15000,
+   "currency": "EUR",
+   "uptime_pct": 99.5047
+  },
+  "c052": {
+   "contract": "c3effea580ac5efa",
+   "credit": 20000,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c053": {
+   "contract": "d6dc0e3f6b591606",
+   "credit": 94500,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c054": {
+   "contract": "933b6a641a0d3fe3",
+   "credit": 881000,
+   "currency": "EUR",
+   "uptime_pct": 99.5182
+  },
+  "c055": {
+   "contract": "bf4c7c7d54203229",
+   "credit": 0,
+   "currency": "EUR",
+   "uptime_pct": null
+  },
+  "c056": {
+   "contract": "f4c8e0ec2a75e478",
+   "credit": 1366500,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c057": {
+   "contract": "ce74b697560ee0bf",
+   "credit": 87500,
+   "currency": "EUR",
+   "uptime_pct": 99.4733
+  },
+  "c058": {
+   "contract": "5899a7d83820e8b6",
+   "credit": 0,
+   "currency": "USD",
+   "uptime_pct": null
+  },
+  "c059": {
+   "contract": "dd9a6ca194d44f25",
+   "credit": 917500,
+   "currency": "GBP",
+   "uptime_pct": 99.5047
+  },
+  "c060": {
+   "contract": "7ffbc3283f819b7c",
+   "credit": 109500,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c061": {
+   "contract": "95369ccfdde17281",
+   "credit": 72000,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c062": {
+   "contract": "2a4803bde3fb5139",
+   "credit": 7500,
+   "currency": "USD",
+   "uptime_pct": 99.5249
+  },
+  "c063": {
+   "contract": "87c00f283d09859a",
+   "credit": 132000,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c064": {
+   "contract": "771c806c926edba4",
+   "credit": 21500,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c065": {
+   "contract": "8be04affc31de74d",
+   "credit": 17000,
+   "currency": "USD",
+   "uptime_pct": 99.4733
+  },
+  "c066": {
+   "contract": "8081693341bcd9a9",
+   "credit": 8419,
+   "currency": "EUR",
+   "uptime_pct": 99.1699
+  },
+  "c067": {
+   "contract": "59e7b9b9a9383888",
+   "credit": 0,
+   "currency": "USD",
+   "uptime_pct": null
+  },
+  "c068": {
+   "contract": "b76014ade62e671c",
+   "credit": 12000,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c069": {
+   "contract": "5764df4f82aaa19b",
+   "credit": 171500,
+   "currency": "EUR",
+   "uptime_pct": 99.4733
+  },
+  "c070": {
+   "contract": "c6d881f82691785f",
+   "credit": 29000,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c071": {
+   "contract": "885a98631e44efb1",
+   "credit": 21500,
+   "currency": "GBP",
+   "uptime_pct": 99.5182
+  },
+  "c072": {
+   "contract": "5805fcbd678193c7",
+   "credit": 21500,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c073": {
+   "contract": "88945ec79dd9426f",
+   "credit": 194000,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c074": {
+   "contract": "df1ec8cc0a8a3009",
+   "credit": 114000,
+   "currency": "GBP",
+   "uptime_pct": 99.4733
+  },
+  "c075": {
+   "contract": "018d9c27558b1eaa",
+   "credit": 49000,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c076": {
+   "contract": "af93093d0d1eface",
+   "credit": 22677,
+   "currency": "USD",
+   "uptime_pct": 99.2026
+  },
+  "c077": {
+   "contract": "5f711330160bcf79",
+   "credit": 866500,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c078": {
+   "contract": "f8724ef8f58f4068",
+   "credit": 40000,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c079": {
+   "contract": "7a464b75f34089e9",
+   "credit": 4000,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c080": {
+   "contract": "fc2844b9c28d2878",
+   "credit": 0,
+   "currency": "USD",
+   "uptime_pct": null
+  },
+  "c081": {
+   "contract": "d6706274e1e8388b",
+   "credit": 0,
+   "currency": "EUR",
+   "uptime_pct": null
+  },
+  "c082": {
+   "contract": "e3b165a121ba645f",
+   "credit": 68500,
+   "currency": "GBP",
+   "uptime_pct": 99.5047
+  },
+  "c083": {
+   "contract": "659247454f3dd08c",
+   "credit": 10000,
+   "currency": "USD",
+   "uptime_pct": 99.4733
+  },
+  "c084": {
+   "contract": "00cf1893822a9be3",
+   "credit": 12500,
+   "currency": "EUR",
+   "uptime_pct": 99.5249
+  },
+  "c085": {
+   "contract": "8de11cf8f112f749",
+   "credit": 14000,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c086": {
+   "contract": "78bca915e8b87eba",
+   "credit": 1316000,
+   "currency": "EUR",
+   "uptime_pct": 99.5047
+  },
+  "c087": {
+   "contract": "71971d873972b529",
+   "credit": 10500,
+   "currency": "USD",
+   "uptime_pct": 99.5294
+  },
+  "c088": {
+   "contract": "b503d7beb11b4140",
+   "credit": 19500,
+   "currency": "EUR",
+   "uptime_pct": 99.5047
+  },
+  "c089": {
+   "contract": "89dddb6e5f3af8ea",
+   "credit": 5500,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c090": {
+   "contract": "d3bba9749f9b16e9",
+   "credit": 88500,
+   "currency": "USD",
+   "uptime_pct": 99.4733
+  },
+  "c091": {
+   "contract": "8ff02b870891ca64",
+   "credit": 19000,
+   "currency": "EUR",
+   "uptime_pct": 99.5249
+  },
+  "c092": {
+   "contract": "33776708da9833a1",
+   "credit": 216000,
+   "currency": "EUR",
+   "uptime_pct": 99.4733
+  },
+  "c093": {
+   "contract": "db0eb37ac6df4577",
+   "credit": 11000,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c094": {
+   "contract": "e3033e248be76abf",
+   "credit": 45500,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c095": {
+   "contract": "55445a069f2bdd7a",
+   "credit": 28500,
+   "currency": "USD",
+   "uptime_pct": 99.5294
+  },
+  "c096": {
+   "contract": "19ceda3ad345bcd3",
+   "credit": 0,
+   "currency": "EUR",
+   "uptime_pct": null
+  },
+  "c097": {
+   "contract": "a6f6b9e40139c002",
+   "credit": 937500,
+   "currency": "EUR",
+   "uptime_pct": 99.5047
+  },
+  "c098": {
+   "contract": "6e0ce1bc9da3f7ce",
+   "credit": 1387000,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c099": {
+   "contract": "833d2b9ff658c200",
+   "credit": 46065,
+   "currency": "USD",
+   "uptime_pct": 99.1087
+  },
+  "c100": {
+   "contract": "4e3b4eb7df72c109",
+   "credit": 12000,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c101": {
+   "contract": "afe58880d9098ff2",
+   "credit": 20500,
+   "currency": "USD",
+   "uptime_pct": 99.5294
+  },
+  "c102": {
+   "contract": "cbaf194a72d2c516",
+   "credit": 17500,
+   "currency": "GBP",
+   "uptime_pct": 99.5047
+  },
+  "c103": {
+   "contract": "c80259c8db3fff73",
+   "credit": 18500,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c104": {
+   "contract": "399d059fe047ee99",
+   "credit": 11500,
+   "currency": "USD",
+   "uptime_pct": 99.4733
+  },
+  "c105": {
+   "contract": "67c4bece4b05bbaf",
+   "credit": 21500,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c106": {
+   "contract": "8b83b7ce69076a1d",
+   "credit": 21500,
+   "currency": "USD",
+   "uptime_pct": 99.4733
+  },
+  "c107": {
+   "contract": "e98123e271926812",
+   "credit": 0,
+   "currency": "USD",
+   "uptime_pct": null
+  },
+  "c108": {
+   "contract": "e035108457514272",
+   "credit": 0,
+   "currency": "GBP",
+   "uptime_pct": null
+  },
+  "c109": {
+   "contract": "689b600f8af00f07",
+   "credit": 150000,
+   "currency": "EUR",
+   "uptime_pct": 99.5047
+  },
+  "c110": {
+   "contract": "c73e683362dee0fd",
+   "credit": 42000,
+   "currency": "EUR",
+   "uptime_pct": 99.5047
+  },
+  "c111": {
+   "contract": "e9d2e457ff61ac7c",
+   "credit": 1437500,
+   "currency": "GBP",
+   "uptime_pct": 99.5047
+  },
+  "c112": {
+   "contract": "1cc38a51360a39b9",
+   "credit": 0,
+   "currency": "GBP",
+   "uptime_pct": null
+  },
+  "c113": {
+   "contract": "fc3fa4f946293223",
+   "credit": 8500,
+   "currency": "GBP",
+   "uptime_pct": 99.5249
+  },
+  "c114": {
+   "contract": "9939129b2c7c02c0",
+   "credit": 25000,
+   "currency": "EUR",
+   "uptime_pct": 99.5047
+  },
+  "c115": {
+   "contract": "b53b5006b2090092",
+   "credit": 133000,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c116": {
+   "contract": "88612318138d3fcc",
+   "credit": 9500,
+   "currency": "GBP",
+   "uptime_pct": 99.4733
+  },
+  "c117": {
+   "contract": "5fa6562c413d78c7",
+   "credit": 1272000,
+   "currency": "USD",
+   "uptime_pct": 99.4397
+  },
+  "c118": {
+   "contract": "519067a8be61b4c4",
+   "credit": 94500,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c119": {
+   "contract": "b9938b34fbe4ec8f",
+   "credit": 8000,
+   "currency": "EUR",
+   "uptime_pct": 99.4733
+  },
+  "c120": {
+   "contract": "f1abdb6630aa19be",
+   "credit": 12500,
+   "currency": "EUR",
+   "uptime_pct": 99.5047
+  },
+  "c121": {
+   "contract": "ae6b4d51041a6e5e",
+   "credit": 168000,
+   "currency": "EUR",
+   "uptime_pct": 99.5182
+  },
+  "c122": {
+   "contract": "076416d4568235b9",
+   "credit": 746500,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c123": {
+   "contract": "2ca68c9676123ee7",
+   "credit": 23500,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c124": {
+   "contract": "6af268c119e25314",
+   "credit": 91500,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c125": {
+   "contract": "20e1e624cdb8188c",
+   "credit": 4500,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c126": {
+   "contract": "726fef86ba527e04",
+   "credit": 1609274,
+   "currency": "USD",
+   "uptime_pct": 99.4094
+  },
+  "c127": {
+   "contract": "9630f5b3c70e8acf",
+   "credit": 0,
+   "currency": "USD",
+   "uptime_pct": null
+  },
+  "c128": {
+   "contract": "438ff315e1b5936b",
+   "credit": 175500,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c129": {
+   "contract": "c61726178e0efe60",
+   "credit": 21500,
+   "currency": "USD",
+   "uptime_pct": 99.4733
+  },
+  "c130": {
+   "contract": "ad39129b03514509",
+   "credit": 3500,
+   "currency": "GBP",
+   "uptime_pct": 99.5294
+  },
+  "c131": {
+   "contract": "de3e8ade422fefeb",
+   "credit": 4000,
+   "currency": "GBP",
+   "uptime_pct": 99.5182
+  },
+  "c132": {
+   "contract": "20214b567f9d4537",
+   "credit": 119500,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c133": {
+   "contract": "f699abfe55c4cbdc",
+   "credit": 6500,
+   "currency": "EUR",
+   "uptime_pct": 99.5182
+  },
+  "c134": {
+   "contract": "069e4d9f5380c028",
+   "credit": 1058000,
+   "currency": "USD",
+   "uptime_pct": 99.4397
+  },
+  "c135": {
+   "contract": "47b35bf191c38fab",
+   "credit": 8000,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c136": {
+   "contract": "7750e1a57318c2e2",
+   "credit": 41000,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c137": {
+   "contract": "b052726d7cd3fe6f",
+   "credit": 123000,
+   "currency": "EUR",
+   "uptime_pct": 99.5047
+  },
+  "c138": {
+   "contract": "37321f19b42f1dec",
+   "credit": 152000,
+   "currency": "EUR",
+   "uptime_pct": 99.5182
+  },
+  "c139": {
+   "contract": "8f73f48fe7c6bb5e",
+   "credit": 72500,
+   "currency": "EUR",
+   "uptime_pct": 99.5047
+  },
+  "c140": {
+   "contract": "f9dfa7125b9db70e",
+   "credit": 15000,
+   "currency": "USD",
+   "uptime_pct": 99.5249
+  },
+  "c141": {
+   "contract": "b8149fc2c708b790",
+   "credit": 174500,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c142": {
+   "contract": "189454cc7c215b65",
+   "credit": 24000,
+   "currency": "EUR",
+   "uptime_pct": 99.5047
+  },
+  "c143": {
+   "contract": "38dff46766d20157",
+   "credit": 17000,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c144": {
+   "contract": "963ca549d2d09ee2",
+   "credit": 174000,
+   "currency": "USD",
+   "uptime_pct": 99.4733
+  },
+  "c145": {
+   "contract": "cc38b5d4d165ddf0",
+   "credit": 106000,
+   "currency": "EUR",
+   "uptime_pct": 99.5182
+  },
+  "c146": {
+   "contract": "862da569aeccbea7",
+   "credit": 0,
+   "currency": "GBP",
+   "uptime_pct": null
+  },
+  "c147": {
+   "contract": "2460645b9cf35570",
+   "credit": 150500,
+   "currency": "EUR",
+   "uptime_pct": 99.5047
+  },
+  "c148": {
+   "contract": "6abd3a480af27570",
+   "credit": 147500,
+   "currency": "USD",
+   "uptime_pct": 99.4733
+  },
+  "c149": {
+   "contract": "181cdd292da9fb16",
+   "credit": 5500,
+   "currency": "GBP",
+   "uptime_pct": 99.4733
+  },
+  "c150": {
+   "contract": "b13b20b2113ee0f7",
+   "credit": 851500,
+   "currency": "EUR",
+   "uptime_pct": 99.5047
+  },
+  "c151": {
+   "contract": "80362489dccb1030",
+   "credit": 974613,
+   "currency": "GBP",
+   "uptime_pct": 99.4467
+  },
+  "c152": {
+   "contract": "4fdf264ee80b41cf",
+   "credit": 10000,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c153": {
+   "contract": "98a661b90a528044",
+   "credit": 63500,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c154": {
+   "contract": "f4eace82978342e5",
+   "credit": 42000,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c155": {
+   "contract": "9ad7fd4aaf38e62a",
+   "credit": 21000,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c156": {
+   "contract": "102d99e70d7d0a25",
+   "credit": 137565,
+   "currency": "EUR",
+   "uptime_pct": 99.3552
+  },
+  "c157": {
+   "contract": "38e7a679f45a64eb",
+   "credit": 121500,
+   "currency": "EUR",
+   "uptime_pct": 99.4733
+  },
+  "c158": {
+   "contract": "7a99130240734808",
+   "credit": 27500,
+   "currency": "EUR",
+   "uptime_pct": 99.5047
+  },
+  "c159": {
+   "contract": "40664bdfbaa3c15d",
+   "credit": 1462500,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c160": {
+   "contract": "0c2a04a7cfca79e4",
+   "credit": 23000,
+   "currency": "USD",
+   "uptime_pct": 99.5249
+  },
+  "c161": {
+   "contract": "ea11bb22333b4af2",
+   "credit": 20500,
+   "currency": "EUR",
+   "uptime_pct": 99.5047
+  },
+  "c162": {
+   "contract": "29e30c706c04c361",
+   "credit": 0,
+   "currency": "EUR",
+   "uptime_pct": null
+  },
+  "c163": {
+   "contract": "b9c5f6e4a7413d51",
+   "credit": 128500,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c164": {
+   "contract": "d5a2640b606bc658",
+   "credit": 75500,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c165": {
+   "contract": "b8b00ba739bd9ab0",
+   "credit": 29000,
+   "currency": "USD",
+   "uptime_pct": 99.5294
+  },
+  "c166": {
+   "contract": "1484c6982e21e12f",
+   "credit": 19500,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c167": {
+   "contract": "4c589e5ddb4474f5",
+   "credit": 28500,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c168": {
+   "contract": "f49c039df46f245c",
+   "credit": 1905000,
+   "currency": "EUR",
+   "uptime_pct": 99.4733
+  },
+  "c169": {
+   "contract": "fca7d13eab07fa1b",
+   "credit": 637500,
+   "currency": "USD",
+   "uptime_pct": 99.4733
+  },
+  "c170": {
+   "contract": "380a21c2efb8ff4e",
+   "credit": 12000,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c171": {
+   "contract": "2557dde698458b6f",
+   "credit": 720000,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c172": {
+   "contract": "179dae6ce603e0b8",
+   "credit": 8500,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c173": {
+   "contract": "54e4c9aedeffa3a8",
+   "credit": 12000,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c174": {
+   "contract": "47df6ef8256163bf",
+   "credit": 22000,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c175": {
+   "contract": "6ee9ccddf6775dd2",
+   "credit": 29500,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c176": {
+   "contract": "bab66827b9a72389",
+   "credit": 114000,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c177": {
+   "contract": "0d9696a18dde6357",
+   "credit": 66500,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c178": {
+   "contract": "01f2fb25afd8f4bc",
+   "credit": 12000,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c179": {
+   "contract": "6844928b9419638f",
+   "credit": 0,
+   "currency": "USD",
+   "uptime_pct": null
+  },
+  "c180": {
+   "contract": "35627a56ec4d089f",
+   "credit": 21000,
+   "currency": "USD",
+   "uptime_pct": 99.4733
+  },
+  "c181": {
+   "contract": "931d4f22e02a6b92",
+   "credit": 137500,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c182": {
+   "contract": "05b12bae95c024d4",
+   "credit": 17500,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c183": {
+   "contract": "c20b9af8f844f504",
+   "credit": 1098000,
+   "currency": "GBP",
+   "uptime_pct": 99.5182
+  },
+  "c184": {
+   "contract": "217043eec8bfe4c5",
+   "credit": 0,
+   "currency": "GBP",
+   "uptime_pct": null
+  },
+  "c185": {
+   "contract": "b0260f042b84f7a8",
+   "credit": 1831250,
+   "currency": "GBP",
+   "uptime_pct": 99.5047
+  },
+  "c186": {
+   "contract": "2192def30c027098",
+   "credit": 6500,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c187": {
+   "contract": "418852b128825b32",
+   "credit": 5000,
+   "currency": "GBP",
+   "uptime_pct": 99.4733
+  },
+  "c188": {
+   "contract": "a89cd41f841f1e9a",
+   "credit": 11000,
+   "currency": "USD",
+   "uptime_pct": 99.5294
+  },
+  "c189": {
+   "contract": "4dc06c414e15630c",
+   "credit": 949500,
+   "currency": "EUR",
+   "uptime_pct": 99.5047
+  },
+  "c190": {
+   "contract": "32b969dd9e0df914",
+   "credit": 15500,
+   "currency": "USD",
+   "uptime_pct": 99.5249
+  },
+  "c191": {
+   "contract": "34ce2f5cc22747b0",
+   "credit": 145000,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c192": {
+   "contract": "32f7f6cecb305aa1",
+   "credit": 161500,
+   "currency": "USD",
+   "uptime_pct": 99.4733
+  },
+  "c193": {
+   "contract": "68d646a89356d358",
+   "credit": 14500,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c194": {
+   "contract": "2566b57bf3411269",
+   "credit": 57500,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c195": {
+   "contract": "f62d7ffde0efaf90",
+   "credit": 0,
+   "currency": "USD",
+   "uptime_pct": null
+  },
+  "c196": {
+   "contract": "81245d4a194b80d9",
+   "credit": 9073,
+   "currency": "USD",
+   "uptime_pct": 98.9574
+  },
+  "c197": {
+   "contract": "1e8ee0c96b8d0b50",
+   "credit": 22500,
+   "currency": "EUR",
+   "uptime_pct": 99.4733
+  },
+  "c198": {
+   "contract": "9ff4d8e21b0ef586",
+   "credit": 7000,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c199": {
+   "contract": "5ff49e27e0bdd9c3",
+   "credit": 84000,
+   "currency": "USD",
+   "uptime_pct": 99.4733
+  },
+  "c200": {
+   "contract": "34ac635d3217c4ef",
+   "credit": 21500,
+   "currency": "USD",
+   "uptime_pct": 99.5294
+  },
+  "c201": {
+   "contract": "8ea16172c068940a",
+   "credit": 17000,
+   "currency": "GBP",
+   "uptime_pct": 99.5047
+  },
+  "c202": {
+   "contract": "e08645dcd1a8689f",
+   "credit": 183500,
+   "currency": "EUR",
+   "uptime_pct": 99.5182
+  },
+  "c203": {
+   "contract": "37a46dcc70fb03c8",
+   "credit": 9500,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c204": {
+   "contract": "1b429c24f3e07273",
+   "credit": 8000,
+   "currency": "GBP",
+   "uptime_pct": 99.4733
+  },
+  "c205": {
+   "contract": "da2f25993de56cc1",
+   "credit": 151500,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c206": {
+   "contract": "a8a4b1c6e41a9114",
+   "credit": 69500,
+   "currency": "USD",
+   "uptime_pct": 99.4733
+  },
+  "c207": {
+   "contract": "f4fe35e0249ed9fa",
+   "credit": 22500,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c208": {
+   "contract": "ce11b34e223798e4",
+   "credit": 24000,
+   "currency": "EUR",
+   "uptime_pct": 99.4733
+  },
+  "c209": {
+   "contract": "42ae69fe619f8ec2",
+   "credit": 1531250,
+   "currency": "GBP",
+   "uptime_pct": 99.5047
+  },
+  "c210": {
+   "contract": "55b1f7e48a0af346",
+   "credit": 178000,
+   "currency": "EUR",
+   "uptime_pct": 99.4733
+  },
+  "c211": {
+   "contract": "2cc67ec167de0212",
+   "credit": 23000,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c212": {
+   "contract": "18d4ccd2318376b6",
+   "credit": 5500,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c213": {
+   "contract": "3f28b4cba1038493",
+   "credit": 21000,
+   "currency": "USD",
+   "uptime_pct": 99.5249
+  },
+  "c214": {
+   "contract": "85f2231cd61a6c04",
+   "credit": 194000,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c215": {
+   "contract": "615c918b4f2c7301",
+   "credit": 79500,
+   "currency": "GBP",
+   "uptime_pct": 99.5047
+  },
+  "c216": {
+   "contract": "05b8b60fc8d508d1",
+   "credit": 95000,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c217": {
+   "contract": "184b54cc389c6674",
+   "credit": 24000,
+   "currency": "USD",
+   "uptime_pct": 99.5294
+  },
+  "c218": {
+   "contract": "bf01a2d6f1a482d9",
+   "credit": 27500,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c219": {
+   "contract": "16219afa33e9be5e",
+   "credit": 0,
+   "currency": "GBP",
+   "uptime_pct": null
+  },
+  "c220": {
+   "contract": "4616c632eb130535",
+   "credit": 91500,
+   "currency": "EUR",
+   "uptime_pct": 99.4733
+  },
+  "c221": {
+   "contract": "e9bf82306931b040",
+   "credit": 139500,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c222": {
+   "contract": "21a13c9c1d93e098",
+   "credit": 14000,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c223": {
+   "contract": "f962b68fd339547e",
+   "credit": 6500,
+   "currency": "USD",
+   "uptime_pct": 99.4733
+  },
+  "c224": {
+   "contract": "bdafb511853fd3bb",
+   "credit": 4000,
+   "currency": "GBP",
+   "uptime_pct": 99.5047
+  },
+  "c225": {
+   "contract": "d158c0f0a72c46e9",
+   "credit": 12000,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c226": {
+   "contract": "c4b48d8f509d11ad",
+   "credit": 7000,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c227": {
+   "contract": "aa9bb3ccc1546096",
+   "credit": 30000,
+   "currency": "EUR",
+   "uptime_pct": 99.5047
+  },
+  "c228": {
+   "contract": "daa43b79ed9cf493",
+   "credit": 74500,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c229": {
+   "contract": "b0b5347b1666e03b",
+   "credit": 189500,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c230": {
+   "contract": "8c8c0c473977e1f2",
+   "credit": 953919,
+   "currency": "EUR",
+   "uptime_pct": 99.3202
+  },
+  "c231": {
+   "contract": "d24713615b2b7aa8",
+   "credit": 8000,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c232": {
+   "contract": "6666e474fc53d701",
+   "credit": 19000,
+   "currency": "USD",
+   "uptime_pct": 99.4733
+  },
+  "c233": {
+   "contract": "9264837bb351a691",
+   "credit": 30000,
+   "currency": "USD",
+   "uptime_pct": 99.5294
+  },
+  "c234": {
+   "contract": "142abfe2eb41fa0c",
+   "credit": 1296000,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c235": {
+   "contract": "89d256abb5bb2842",
+   "credit": 20000,
+   "currency": "EUR",
+   "uptime_pct": 99.5047
+  },
+  "c236": {
+   "contract": "77130395e0defb4c",
+   "credit": 89000,
+   "currency": "USD",
+   "uptime_pct": 99.4733
+  },
+  "c237": {
+   "contract": "947eb7a84eb015a0",
+   "credit": 102000,
+   "currency": "GBP",
+   "uptime_pct": 99.5047
+  },
+  "c238": {
+   "contract": "e98ea7c38bf71b05",
+   "credit": 154000,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c239": {
+   "contract": "739969b95922b0a4",
+   "credit": 29000,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c240": {
+   "contract": "95a30b0852a90b3c",
+   "credit": 12000,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c241": {
+   "contract": "4613577d696f5774",
+   "credit": 195500,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c242": {
+   "contract": "b0211e1530e09da4",
+   "credit": 4000,
+   "currency": "EUR",
+   "uptime_pct": 99.5047
+  },
+  "c243": {
+   "contract": "9bd02ebd39464a02",
+   "credit": 29000,
+   "currency": "USD",
+   "uptime_pct": 99.4733
+  },
+  "c244": {
+   "contract": "55c1da47b4b5b0e4",
+   "credit": 50500,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c245": {
+   "contract": "9522f888a0df7eab",
+   "credit": 70500,
+   "currency": "USD",
+   "uptime_pct": 99.4733
+  },
+  "c246": {
+   "contract": "ae759717b32a99db",
+   "credit": 0,
+   "currency": "EUR",
+   "uptime_pct": null
+  },
+  "c247": {
+   "contract": "b82a5fa3d2ee6c32",
+   "credit": 1042500,
+   "currency": "USD",
+   "uptime_pct": 99.4733
+  },
+  "c248": {
+   "contract": "05bddb1faa450537",
+   "credit": 27500,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c249": {
+   "contract": "33d92e15d816b505",
+   "credit": 10500,
+   "currency": "USD",
+   "uptime_pct": 99.5294
+  },
+  "c250": {
+   "contract": "eff244b87579e2e8",
+   "credit": 0,
+   "currency": "USD",
+   "uptime_pct": null
+  },
+  "c251": {
+   "contract": "cb2e0e47acb5b747",
+   "credit": 26500,
+   "currency": "USD",
+   "uptime_pct": 99.5249
+  },
+  "c252": {
+   "contract": "9d2c042d19169e8d",
+   "credit": 142000,
+   "currency": "EUR",
+   "uptime_pct": 99.4733
+  },
+  "c253": {
+   "contract": "db0b2a47c5ae4a53",
+   "credit": 1253000,
+   "currency": "USD",
+   "uptime_pct": 99.4733
+  },
+  "c254": {
+   "contract": "fba000d2000b296b",
+   "credit": 153000,
+   "currency": "EUR",
+   "uptime_pct": 99.5047
+  },
+  "c255": {
+   "contract": "259f04856f23add8",
+   "credit": 30500,
+   "currency": "USD",
+   "uptime_pct": 99.4733
+  },
+  "c256": {
+   "contract": "a5234e696f434ba7",
+   "credit": 114500,
+   "currency": "GBP",
+   "uptime_pct": 99.4733
+  },
+  "c257": {
+   "contract": "394346de201a015d",
+   "credit": 20000,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c258": {
+   "contract": "40fc5e7765b673d6",
+   "credit": 1608750,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c259": {
+   "contract": "5f9b8a1cd31749a2",
+   "credit": 16000,
+   "currency": "EUR",
+   "uptime_pct": 99.5047
+  },
+  "c260": {
+   "contract": "1b3ad7ac4580f582",
+   "credit": 1226500,
+   "currency": "EUR",
+   "uptime_pct": 99.4733
+  },
+  "c261": {
+   "contract": "d8df971cb491459e",
+   "credit": 26500,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c262": {
+   "contract": "12b8517dc5cf8a66",
+   "credit": 0,
+   "currency": "USD",
+   "uptime_pct": null
+  },
+  "c263": {
+   "contract": "b020fd6ecf11ae0c",
+   "credit": 9000,
+   "currency": "GBP",
+   "uptime_pct": 99.5047
+  },
+  "c264": {
+   "contract": "924acf5672e8989b",
+   "credit": 18500,
+   "currency": "USD",
+   "uptime_pct": 99.4733
+  },
+  "c265": {
+   "contract": "5946382eaacb9330",
+   "credit": 22500,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c266": {
+   "contract": "0d9ab7b092d04919",
+   "credit": 56500,
+   "currency": "EUR",
+   "uptime_pct": 99.4733
+  },
+  "c267": {
+   "contract": "c65252972f9caa73",
+   "credit": 15000,
+   "currency": "EUR",
+   "uptime_pct": 99.5182
+  },
+  "c268": {
+   "contract": "a6b77ab33e7bf067",
+   "credit": 11500,
+   "currency": "GBP",
+   "uptime_pct": 99.5182
+  },
+  "c269": {
+   "contract": "84a33b5ed2a35220",
+   "credit": 172000,
+   "currency": "USD",
+   "uptime_pct": 99.4733
+  },
+  "c270": {
+   "contract": "13a4e5478b02d0a6",
+   "credit": 4000,
+   "currency": "USD",
+   "uptime_pct": 99.5294
+  },
+  "c271": {
+   "contract": "6d0b954bfc222fb2",
+   "credit": 17000,
+   "currency": "EUR",
+   "uptime_pct": 99.5249
+  },
+  "c272": {
+   "contract": "92bcbf8b0b739ffe",
+   "credit": 17000,
+   "currency": "GBP",
+   "uptime_pct": 99.4733
+  },
+  "c273": {
+   "contract": "6debc0e80c47eafe",
+   "credit": 67000,
+   "currency": "USD",
+   "uptime_pct": 99.4733
+  },
+  "c274": {
+   "contract": "2717b8484e6cc324",
+   "credit": 131500,
+   "currency": "USD",
+   "uptime_pct": 99.4733
+  },
+  "c275": {
+   "contract": "670307cc9c52b645",
+   "credit": 900500,
+   "currency": "USD",
+   "uptime_pct": 99.4733
+  },
+  "c276": {
+   "contract": "0454164044a1a771",
+   "credit": 7500,
+   "currency": "EUR",
+   "uptime_pct": 99.4733
+  },
+  "c277": {
+   "contract": "4df7960c3339ded0",
+   "credit": 18500,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c278": {
+   "contract": "2eba74cd6b7e452a",
+   "credit": 0,
+   "currency": "USD",
+   "uptime_pct": null
+  },
+  "c279": {
+   "contract": "cb7c4cbfc82e7399",
+   "credit": 159500,
+   "currency": "USD",
+   "uptime_pct": 99.5182
+  },
+  "c280": {
+   "contract": "748054e719ac758f",
+   "credit": 87000,
+   "currency": "EUR",
+   "uptime_pct": 99.4733
+  },
+  "c281": {
+   "contract": "3ea1e3b539022208",
+   "credit": 22000,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c282": {
+   "contract": "14f490c7ae02add1",
+   "credit": 22500,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c283": {
+   "contract": "4addb4a928a0592e",
+   "credit": 100403,
+   "currency": "EUR",
+   "uptime_pct": 98.9898
+  },
+  "c284": {
+   "contract": "db7284d3a4c83c66",
+   "credit": 319000,
+   "currency": "USD",
+   "uptime_pct": 99.4733
+  },
+  "c285": {
+   "contract": "ac7ba10a83f8ffd0",
+   "credit": 114000,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c286": {
+   "contract": "6133db1ac0d709ad",
+   "credit": 1185726,
+   "currency": "EUR",
+   "uptime_pct": 99.4705
+  },
+  "c287": {
+   "contract": "62b0c537e1f75e5a",
+   "credit": 8000,
+   "currency": "GBP",
+   "uptime_pct": 99.5047
+  },
+  "c288": {
+   "contract": "090e6826d3b1a78c",
+   "credit": 198500,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c289": {
+   "contract": "7f0e3a48394e74ac",
+   "credit": 30500,
+   "currency": "EUR",
+   "uptime_pct": 99.4733
+  },
+  "c290": {
+   "contract": "245386286f374f90",
+   "credit": 83500,
+   "currency": "EUR",
+   "uptime_pct": 99.5182
+  },
+  "c291": {
+   "contract": "31a680654db74049",
+   "credit": 1097000,
+   "currency": "EUR",
+   "uptime_pct": 99.5047
+  },
+  "c292": {
+   "contract": "9fe98d8acc961dfa",
+   "credit": 16500,
+   "currency": "USD",
+   "uptime_pct": 99.4733
+  },
+  "c293": {
+   "contract": "ad7bdfedd7ebc4ec",
+   "credit": 0,
+   "currency": "EUR",
+   "uptime_pct": null
+  },
+  "c294": {
+   "contract": "f8562d600358dac9",
+   "credit": 153500,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c295": {
+   "contract": "d58bb71af1fa9f0a",
+   "credit": 29000,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c296": {
+   "contract": "6a7d50073f9d3ad8",
+   "credit": 55000,
+   "currency": "GBP",
+   "uptime_pct": 99.5047
+  },
+  "c297": {
+   "contract": "e998039928fc14d3",
+   "credit": 591000,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c298": {
+   "contract": "362745ce1f574447",
+   "credit": 653500,
+   "currency": "USD",
+   "uptime_pct": 99.5047
+  },
+  "c299": {
+   "contract": "518de2d4d96259e2",
+   "credit": 104000,
+   "currency": "USD",
+   "uptime_pct": 99.4733
+  },
+  "c300": {
+   "contract": "a9f8a9d911c4a196",
+   "credit": 22000,
+   "currency": "EUR",
+   "uptime_pct": 99.5047
+  }
+ },
+ "data_fingerprint": "610d2c41941a3d0b",
+ "month": "2026-03",
+ "seed": 20261,
+ "total_credit_usd_cents": 62732716
+}
