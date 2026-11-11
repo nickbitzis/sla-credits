@@ -26,6 +26,7 @@ jobs:
         run: uv run --python 3.12 slacredits gate --golden golden/credits-2026-03.json
       - name: Finance export for the sample month
         run: |
+          mkdir -p data
           uv run --python 3.12 slacredits --db data/ci.db export 2026-03 --format csv > data/credit-memos-2026-03.csv
           uv run --python 3.12 slacredits --db data/ci.db totals
       - uses: actions/upload-artifact@v4
